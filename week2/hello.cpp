@@ -1,0 +1,20 @@
+#include <iostream>
+
+int main(){
+    double n, absv;
+    // n for the input, absv will be
+    // the absolute value we compute
+    std::cout << "give a number" << std::endl;
+    std::cin >> n;
+
+    if(n < 0){ // yes/no question: is n less than 0?
+        // if yes, its absolute value is the number changing the sign
+        absv = -n;
+    }
+    else{
+        absv = n;
+    }
+
+    std::cout << "|" << n << "| = " << absv << std::endl;
+
+}
